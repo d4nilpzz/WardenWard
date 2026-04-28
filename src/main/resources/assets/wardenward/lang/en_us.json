@@ -1,4 +1,10 @@
 {
-  "itemGroup.wardenward.warden_ward_tab": "WardenWard",
-  "item.wardenward.warden_ward": "Warden Ward Boots"
+  "itemGroup.wardenward.warden_ward_tab": "Warden Ward",
+
+  "key.categories.wardenward": "Warden Ward",
+  "key.wardenward.warden_pulse_action": "Warden Pulse Action",
+
+  "item.wardenward.warden_ward": "Warden Ward Boots",
+  "item.wardenward.warden_xp_necklace": "Warden Xp Necklace",
+  "item.wardenward.warden_pulse_necklace": "Warden Pulse Necklace"
 }

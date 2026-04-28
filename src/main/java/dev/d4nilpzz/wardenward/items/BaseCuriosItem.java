@@ -9,9 +9,9 @@ import net.minecraft.world.level.Level;
 import top.theillusivec4.curios.api.CuriosApi;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
-public class WardenWardItem extends Item implements ICurioItem {
+public class BaseCuriosItem extends Item implements ICurioItem {
 
-    public WardenWardItem(Properties properties) {
+    public BaseCuriosItem(Properties properties) {
         super(properties);
     }
 

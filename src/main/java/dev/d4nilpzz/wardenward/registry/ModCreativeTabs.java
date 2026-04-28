@@ -20,6 +20,8 @@ public class ModCreativeTabs {
                             .icon(() -> new ItemStack(ModItems.WARDEN_WARD.get()))
                             .displayItems((parameters, output) -> {
                                 output.accept(ModItems.WARDEN_WARD.get());
+                                output.accept(ModItems.WARDEN_PULSE_NECKLACE.get());
+                                output.accept(ModItems.WARDEN_XP_NECKLACE.get());
                             })
                             .build()
             );
