@@ -1,26 +1,17 @@
 package dev.d4nilpzz.wardenward.actions;
 
-import dev.d4nilpzz.wardenward.registry.ModItems;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.damagesource.DamageSources;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
-import top.theillusivec4.curios.api.CuriosApi;
-
 import java.util.List;
 
-public class WardenPulseAction {
+public class WardenSonicPulseAction {
 
     public static void execute(Player player) {
-        boolean hasAmulet = CuriosApi.getCuriosInventory(player)
-                .map(inv -> inv.findFirstCurio(ModItems.WARDEN_PULSE_NECKLACE.get()).isPresent())
-                .orElse(false);
-
-        if (hasAmulet && player.experienceLevel > 1) {
-            player.experienceLevel = player.experienceLevel - 1;
+        if (player.experienceLevel > 1) {
+            player.experienceLevel--;
 
             Vec3 look = player.getLookAngle();
             Vec3 eyePos = player.getEyePosition();
@@ -43,8 +34,7 @@ public class WardenPulseAction {
 
                 for (Entity e : entities) {
                     if (e != player) {
-                        e.hurt(player.damageSources().generic(), 10.0F);
-                        e.lavaHurt();
+                        e.hurt(player.damageSources().playerAttack(player), 15.0F);
                     }
                 }
             }

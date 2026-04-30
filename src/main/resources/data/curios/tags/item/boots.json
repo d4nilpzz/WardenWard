@@ -1,4 +1,4 @@
 {
   "replace": false,
-  "values": ["wardenward:warden_ward"]
+  "values": ["wardenward:warden_ward", "wardenward:warden_pulse_boots"]
 }

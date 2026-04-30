@@ -1,10 +1,18 @@
 {
   "itemGroup.wardenward.warden_ward_tab": "Warden Ward",
-
+  "tooltip.wardenward.default": "Press Shift for details.",
   "key.categories.wardenward": "Warden Ward",
   "key.wardenward.warden_pulse_action": "Warden Pulse Action",
 
   "item.wardenward.warden_ward": "Warden Ward Boots",
+  "tooltip.wardenward.warden_ward": "Prevent the warden from spawning in the world when equipped.",
+
   "item.wardenward.warden_xp_necklace": "Warden Xp Necklace",
-  "item.wardenward.warden_pulse_necklace": "Warden Pulse Necklace"
+  "tooltip.wardenward.warden_xp_necklace": "Give a 0.1% of the current level of exprecience when gaining xp.",
+
+  "item.wardenward.warden_pulse_boots": "Warden Pulse Boots",
+  "tooltip.wardenward.warden_pulse_boots": "Press the Warden Pulse Action key to execute the jump.",
+
+  "item.wardenward.warden_sonic_pulse": "Warden Sonic Pulse",
+  "tooltip.wardenward.warden_sonic_pulse": "Throw a sonic pulse at your enemies."
 }

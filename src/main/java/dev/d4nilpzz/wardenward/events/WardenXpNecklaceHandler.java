@@ -21,9 +21,7 @@ public class WardenXpNecklaceHandler {
 
         if (hasAmulet) {
             int originalXp = event.getOrb().getValue();
-            float absorption = player.getAbsorptionAmount();
-            int add = (int)(originalXp * (originalXp * 0.1f));
-            event.getOrb().value = originalXp + add;
+            event.getOrb().value = originalXp * 2;
         }
     }
 }
